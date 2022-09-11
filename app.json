@@ -1,0 +1,17 @@
+{
+	"name": "NFT-Mailing-List-Database",
+	"description": "One-click init database and scheduler on Heroku.",
+	"repository": "",
+	"keywords": [],
+	"env": {},
+	"addons": [
+		"scheduler",
+		{
+			"plan": "heroku-postgresql",
+			"as": "BACKUP_DATABASE",
+			"options": {
+				"version": "14"
+			}
+		}
+	]
+}
